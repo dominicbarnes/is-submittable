@@ -1,6 +1,6 @@
 {
   "name": "is-submittable",
-  "version": "0.2.1",
+  "version": "1.0.0",
   "repository": "dominicbarnes/is-submittable",
   "description": "check if the given form element is submittable.",
   "keywords": [

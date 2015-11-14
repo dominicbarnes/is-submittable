@@ -1,23 +1,11 @@
 
-# submittable
+# is-submittable
 
-  check if the given form element is submittable.
+> A helper for determining if a given input is able to be submitted in an HTML form.
 
-## Installation
+## API
 
-  Install with [component(1)](http://component.io):
+### submittable(el)
 
-    $ component install yields/submittable
-
-## Example
-
-```js
-submittable('<input type="text" name="baz">'); // > true
-submittable('<select></select>'); // > false
-submittable('<input type="checkbox" name="baz" checked>'); // > true
-submittable('<input type="submit" name="foo">'); // > false
-```
-
-## License
-
-  MIT
+Must pass a raw HTML element as `el`. It will return a boolean indicating whether or not it is
+valid for submission according to the rules in the [HTML spec](https://html.spec.whatwg.org/multipage/forms.html#category-submit).

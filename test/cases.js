@@ -3,7 +3,7 @@
  * cases
  */
 
-var cases = [];
+var cases = module.exports = [];
 
 /**
  * 1

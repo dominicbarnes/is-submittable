@@ -1,0 +1,29 @@
+{
+  "name": "is-submittable",
+  "version": "0.2.1",
+  "repository": "dominicbarnes/is-submittable",
+  "description": "check if the given form element is submittable.",
+  "keywords": [
+    "submittable",
+    "form"
+  ],
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@dominicbarnes/eslint-config": "^0.2.0",
+    "@dominicbarnes/eslint-config-browser": "^0.4.0",
+    "@dominicbarnes/eslint-config-mako": "0.0.1",
+    "@dominicbarnes/eslint-config-test": "0.0.2",
+    "domify": "^1.4.0",
+    "eslint": "^1.9.0",
+    "eslint-plugin-require-path-exists": "^1.0.18",
+    "for-each": "^0.3.2",
+    "zuul": "^3.7.2"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "npm run lint",
+    "test": "zuul -- test",
+    "start": "zuul --local 7000 -- test"
+  }
+}
